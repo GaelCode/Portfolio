@@ -86,7 +86,7 @@ const Fond: React.FC = () => {
         const centerX = mousePosition.x;
         const centerY = mousePosition.y;
         const distance = Math.sqrt(Math.pow(centerX - (x * squareSize + squareSize / 2), 2) + Math.pow(centerY - (y * squareSize + squareSize / 2), 2));
-        const scale = Math.max(1, 1 + (2 - distance / 150) * 1.5); // Augmenter la portée de l'animation de la souris
+        const scale = Math.max(1, 1 + (2 - distance / 100) * 1.5); // Augmenter la portée de l'animation de la souris
         return scale;
     };
 
