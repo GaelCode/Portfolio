@@ -1,15 +1,27 @@
 .cta {
     background-color: #005DFF;
     color: white;
-    font-size: clamp(0.8rem, 0.7692rem + 1.0256vw, 1.8rem);
+    font-size: clamp(1rem, 0.8558rem + 0.641vw, 1.625rem);
     padding: 8px 16px;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
+    width: fit-content;
+    font-weight: 600;
 }
 
-.cta:hover{
+.cta:hover, .cta:focus-visible{
     background-color: #004bce;
+}
+
+.cta--special {
+    background-color: transparent;
+    color: #005DFF;
+}
+
+.cta--special:hover, .cta--special:focus-visible {
+    background-color: #005DFF;
+    color: white;
 }
 
 @media screen and (max-width: 400px) {

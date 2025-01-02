@@ -1,5 +1,4 @@
 header{
-    width: 100%;
     padding: 24px 40px;
 }
 
@@ -46,16 +45,11 @@ header{
 
 a{
     text-decoration: none;
-    padding-right: 90px;
 }
 
 @media screen and (max-width: 500px) {
     header{
         padding: 24px 16px;
-    }
-
-    a{
-        padding-right: 40px;
     }
 }
 

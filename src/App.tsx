@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Fond from './fond/fond'; // Import du composant Fond (majuscule)
 import Header from './header/header';
+import Accueil from './accueil/accueil';
 import './index.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Fond />
       <main>
         <Header></Header>
+        <Accueil></Accueil>
       </main>
     </>
   );

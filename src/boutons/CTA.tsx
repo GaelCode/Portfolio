@@ -12,4 +12,12 @@ const CTA = ({ texte }: CTAProps) => {
     );
 };
 
-export default CTA;
+const Special_CTA = ({ texte }: CTAProps) => {
+    return (
+        <div className="cta cta--special">
+            {texte}
+        </div>
+    );
+};
+
+export {CTA, Special_CTA};

@@ -1,4 +1,4 @@
-import CTA from "../boutons/CTA"
+import {CTA} from "../boutons/CTA"
 import './header.css'
 
 const Header = () => {
