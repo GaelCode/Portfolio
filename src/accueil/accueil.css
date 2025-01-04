@@ -1,9 +1,9 @@
-section {
+.accueil {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 150px;
     padding: 40px;
-    height: 78%;
+    height: 75vh;
 }
 
 .info {
@@ -83,7 +83,7 @@ section {
 
 
 @media screen and (max-width: 1000px) {
-    section{
+    .accueil{
         grid-template-columns: 2fr 3fr;
         gap: 50px;
     }
@@ -94,7 +94,9 @@ section {
         display: none;
     }
 
-    section{
+    .accueil{
         grid-template-columns: 1fr;
+        height: 85vh;
+        align-content: center;
     }
 }

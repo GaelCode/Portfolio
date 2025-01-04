@@ -1,0 +1,131 @@
+.about{
+    display: grid;
+    gap: 150px;
+    padding: 40px;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 75vh;
+}
+
+.grandi{
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.grandi:hover{
+    transform: scale(1.2);
+}
+
+.texte p{
+    text-align: justify;
+    font-size: clamp(0.75rem, 0.6635rem + 0.3846vw, 1.125rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.image {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin: 0 auto; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Formation {
+    background-color: black;
+    color: white;
+    display: grid;
+    gap: 40px;
+    padding: 40px;
+    padding-bottom: 96px;
+    justify-content: center;
+}
+
+.Formation h2{
+    font-size: clamp(2rem, 1.6538rem + 1.5385vw, 3.5rem);
+    text-align: center;
+}
+
+.school{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 96px;
+}
+
+.lycee, .universite{
+    display: grid;
+    gap: 50px;
+    justify-items: center;
+}
+
+svg{
+    fill: white;
+    width: 40%;
+    height: fit-content;
+}
+
+.info-about{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.info-about p {
+    font-weight: 600;
+    font-size: clamp(1.25rem, 0.9615rem + 1.2821vw, 2.5rem);
+}
+
+.info-about span{
+    font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+}
+
+.info-about::after{
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+@media screen and (max-width:1000px) {
+    .image img {
+        display: none;
+    }
+
+    .presentation{
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (max-width: 1070px) {
+    .school{
+        grid-template-columns: 1fr;
+    }
+}

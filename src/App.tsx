@@ -1,21 +1,16 @@
-import { useState } from 'react';
-import Fond from './fond/fond'; // Import du composant Fond (majuscule)
-import Header from './header/header';
+import { Routes, Route } from 'react-router-dom';
 import Accueil from './accueil/accueil';
-import './index.css'
+import About from './About/About';
+import Projects from './Projects/Projects';
 
-function App() {
-  const [count, setCount] = useState<number>(0);
-
+const App = () => {
   return (
-    <>
-      <Fond />
-      <main>
-        <Header></Header>
-        <Accueil></Accueil>
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<Accueil />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
   );
-}
+};
 
 export default App;

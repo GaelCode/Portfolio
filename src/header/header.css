@@ -17,7 +17,7 @@ header{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
     font-size: clamp(0.8rem, 0.7692rem + 1.0256vw, 1.8rem);
     margin: 0;
     padding: 0;
