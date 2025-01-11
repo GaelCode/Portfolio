@@ -1,0 +1,18 @@
+.indication-btn {
+    position: fixed;  /* Fixe le bouton à un emplacement spécifique dans la fenêtre */
+    bottom: 20px;     /* Distance par rapport au bas de l'écran */
+    right: 20px;      /* Distance par rapport au côté droit de l'écran */
+    background-color: #005DFF; /* Bleu */
+    color: white;
+    padding: 3px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 24px;
+}
+
+.indication-btn:hover, .indication-btn:focus-visible {
+    background-color: #004bce;
+}

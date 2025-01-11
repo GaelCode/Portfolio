@@ -1,9 +1,9 @@
 .accueil {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 150px;
-    padding: 40px;
+    gap: auto;
     height: 75vh;
+    padding: 40px 0;
 }
 
 .info {
@@ -98,5 +98,15 @@
         grid-template-columns: 1fr;
         height: 85vh;
         align-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info {
+        text-align: center;
+    }
+
+    .list-cta {
+        justify-content: center;
     }
 }

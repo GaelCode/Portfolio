@@ -1,0 +1,87 @@
+/* Section des projets */
+.projects {
+    width: 100%;
+    height: 85vh;
+    max-width: 1200px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    width: 90%; /* Applique la largeur de 70% */
+    margin: 0 auto; /* Centre la grille */
+    align-self: center;
+}
+
+.project {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Bloc de fond semi-transparent */
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    height: 100%; /* Assure que le texte prend toute la hauteur de la carte */
+    transform: translateY(100%); /* Le texte est caché en bas de la carte */
+    transition: transform 0.5s ease-in-out; /* Transition plus fluide */
+
+    display: grid;
+    align-items: center;
+}
+
+.project:hover .project-text, .project:focus-visible .project-text {
+    transform: translateY(0); /* Le texte remonte lorsque l'on survole */
+}
+
+.project h3 {
+    font-size: clamp(1rem, 0.8558rem + 0.641vw, 1.625rem);
+    color: white;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project:hover, .project:focus-visible {
+    box-shadow: 1px 20px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Bouton pour indiquer que le projet est en cours */
+.project-status {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-status:hover {
+    background-color: darkred;
+}

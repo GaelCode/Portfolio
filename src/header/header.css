@@ -1,10 +1,11 @@
 header{
-    padding: 24px 40px;
+    padding: 24px 0;
 }
 
 .menu {
     display: flex;
     width: 100%;
+    max-width: 100%;
     justify-content: space-between;
 }
 
@@ -45,12 +46,6 @@ header{
 
 a{
     text-decoration: none;
-}
-
-@media screen and (max-width: 500px) {
-    header{
-        padding: 24px 16px;
-    }
 }
 
 @media screen and (max-width: 400px) {
