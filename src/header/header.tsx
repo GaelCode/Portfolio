@@ -1,9 +1,16 @@
 import {CTA} from "../boutons/CTA"
 import './header.css'
+import React, { useEffect } from "react";
+import { animateElements } from "../animation"
+
 
 const Header = () => {
+    useEffect(() => {
+        animateElements();
+    }, []);
+
     return (
-        <header>
+        <header className="animatable">
             <div className="menu">
                 <ul>
                     <li><a href="/">Accueil</a></li>

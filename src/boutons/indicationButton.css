@@ -11,6 +11,7 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-size: 24px;
+    z-index: 2;
 }
 
 .indication-btn:hover, .indication-btn:focus-visible {

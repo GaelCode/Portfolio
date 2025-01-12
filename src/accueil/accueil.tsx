@@ -4,9 +4,16 @@ import './accueil.css';
 import Header from "../header/header";
 import Fond from "../fond/fond";
 import IndicationButton from "../boutons/indication";
+import React, { useEffect } from "react";
+import { animateElements, animateReverse } from "../animation"
 
 
 const Accueil = () => {
+    useEffect(() => {
+        animateReverse();
+        animateElements();
+    }, []);
+
     return (
         <>
             <IndicationButton></IndicationButton>
@@ -15,7 +22,7 @@ const Accueil = () => {
                 <div className="container">
                     <Header></Header>
                     <section className="accueil">
-                        <div className="info">
+                        <div className="info animatable">
                             <div className="hello">Hi, I'm</div>
                             <div className="name">Gaël</div>
                             <div className="learning">Computer Science student</div>
@@ -25,7 +32,7 @@ const Accueil = () => {
                                 <a href="/projects"><CTA texte="Projects"></CTA></a>
                             </div>
                         </div>
-                        <div className="image-container">
+                        <div className="image-container animatableReverse">
                             <img src="/src/assets/code-pc.jpg" alt="A computer on a desk, with an ide open" />
                             <p className="credit">Photo de <a href="https://unsplash.com/fr/@altumcode?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">AltumCode</a> sur <a href="https://unsplash.com/fr/photos/macbook-pro-sur-table-en-bois-noir-PNbDkQ2DDgM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></p>
                         </div>

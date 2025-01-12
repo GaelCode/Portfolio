@@ -27,6 +27,7 @@
     transition: box-shadow 0.3s ease;
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
 
 .project-text {
@@ -86,6 +87,12 @@
     background-color: darkred;
 }
 
+@media screen and (min-width: 1000px){
+    .projects-grid {
+        height: 70%;
+    }
+}
+
 @media screen and (max-width: 1000px) and (min-width: 500px) {
     .projects-grid {
         grid-template-columns: 1fr 1fr;
@@ -94,6 +101,7 @@
     }
     .project {
         height: 40vh;
+        max-width: 200px;
     }
 }
 

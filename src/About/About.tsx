@@ -3,9 +3,15 @@ import './about.css'
 import Header from "../header/header";
 import Fond from "../fond/fond";
 import IndicationButton from "../boutons/indication";
+import React, { useEffect } from "react";
+import { animateElements } from "../animation"
 
 
 const About = () => {
+    useEffect(() => {
+        animateElements();
+    }, []);
+
     return(
         <>
             <IndicationButton></IndicationButton>
@@ -13,7 +19,7 @@ const About = () => {
             <main>
                 <div className="container">
                     <Header></Header>
-                    <section className='about'>
+                    <section className='about animatable'>
                         <div className="presentation">
                             <div className="texte">
                                 <h2><span className="grandi">Presentation</span></h2>
@@ -36,11 +42,11 @@ const About = () => {
                 
                 <div className="Formation">
                     <div className="container">
-                        <h2>
+                        <h2 className='animatable'>
                             Formation
                         </h2>
                         <div className="school">
-                            <div className="lycee">
+                            <div className="lycee animatable">
                                 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 484.006 484.006">
                                     <g>
                                         <g>
@@ -57,8 +63,8 @@ const About = () => {
                                     <span>Specialities: mathématique, NSI, Physique Chimie</span>
                                 </div>
                             </div>
-                            <div className="universite">
-                                <svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><polygon points="46.73 53.68 16.58 53.68 16.58 22.74 31.65 10.74 46.73 22.74 46.73 53.68" stroke-linecap="round"/><polyline points="25.76 53.68 25.76 42.03 37.55 42.03 37.55 53.68" stroke-linecap="round"/><circle cx="31.65" cy="26.65" r="4.23" stroke-linecap="round"/><polyline points="16.58 53.68 9.49 53.68 9.49 31.48 16.58 31.48" stroke-linecap="round"/><polyline points="46.73 31.48 54.51 31.48 54.51 53.68 46.73 53.68" stroke-linecap="round"/></svg>
+                            <div className="universite animatable">
+                                <svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" strokeWidth="3" stroke="#000000" fill="none"><polygon points="46.73 53.68 16.58 53.68 16.58 22.74 31.65 10.74 46.73 22.74 46.73 53.68" strokeLinecap="round"/><polyline points="25.76 53.68 25.76 42.03 37.55 42.03 37.55 53.68" strokeLinecap="round"/><circle cx="31.65" cy="26.65" r="4.23" strokeLinecap="round"/><polyline points="16.58 53.68 9.49 53.68 9.49 31.48 16.58 31.48" strokeLinecap="round"/><polyline points="46.73 31.48 54.51 31.48 54.51 53.68 46.73 53.68" strokeLinecap="round"/></svg>
                                 <div className="info-about">
                                     <p>University UPEC</p>
                                     <span>BUT Informatique</span>
