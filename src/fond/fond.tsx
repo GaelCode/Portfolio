@@ -5,7 +5,9 @@ const Fond: React.FC = () => {
     const [largeur, setLargeur] = useState<number>(window.innerWidth);
     const [hauteur, setHauteur] = useState<number>(window.innerHeight);
     const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+    // @ts-ignore
     const [clicks, setClicks] = useState<Array<{ x: number; y: number; time: number }>>([]); // Liste des clics et leur temps
+    // @ts-ignore
     const [pixelAnimationState, setPixelAnimationState] = useState<Map<string, { active: boolean; time: number }>>(new Map()); // Suivi des animations des pixels
 
     useEffect(() => {
@@ -100,7 +102,7 @@ const Fond: React.FC = () => {
                         const key = `${colIndex}-${rowIndex}`;
 
                         // Vérifier si l'animation doit être en cours ou non
-                        const pixelAnimation = pixelAnimationState.get(key);
+                        pixelAnimationState.get(key);
 
                         // Calculer l'effet de suivi de la souris
                         const mouseScale = calculateMouseScale(colIndex, rowIndex);

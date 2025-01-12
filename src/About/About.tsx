@@ -3,9 +3,9 @@ import './about.css'
 import Header from "../header/header";
 import Fond from "../fond/fond";
 import IndicationButton from "../boutons/indication";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { animateElements } from "../animation"
-
+import ab from "./../assets/About.png"
 
 const About = () => {
     useEffect(() => {
@@ -34,7 +34,7 @@ const About = () => {
                                 </p>
                             </div>
                             <div className='image'>
-                                <img src="src/assets/About.png" alt="A simple 2D drawing of a person" />
+                                <img src={ab} alt="A simple 2D drawing of a person" />
                             </div>
                         </div>
                     </section>

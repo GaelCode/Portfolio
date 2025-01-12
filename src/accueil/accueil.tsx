@@ -4,9 +4,9 @@ import './accueil.css';
 import Header from "../header/header";
 import Fond from "../fond/fond";
 import IndicationButton from "../boutons/indication";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { animateElements, animateReverse } from "../animation"
-
+import logo from './../assets/code-pc.jpg';
 
 const Accueil = () => {
     useEffect(() => {
@@ -33,7 +33,7 @@ const Accueil = () => {
                             </div>
                         </div>
                         <div className="image-container animatableReverse">
-                            <img src="/src/assets/code-pc.jpg" alt="A computer on a desk, with an ide open" />
+                            <img src={logo} alt="A computer on a desk, with an ide open" />
                             <p className="credit">Photo de <a href="https://unsplash.com/fr/@altumcode?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">AltumCode</a> sur <a href="https://unsplash.com/fr/photos/macbook-pro-sur-table-en-bois-noir-PNbDkQ2DDgM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></p>
                         </div>
                     </section>

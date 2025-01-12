@@ -1,6 +1,6 @@
 import {CTA} from "../boutons/CTA"
 import './header.css'
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { animateElements } from "../animation"
 
 
