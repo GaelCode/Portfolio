@@ -45,3 +45,28 @@ main {
         padding: 0 10px; /* Réduit les marges sur petits écrans */
     }
 }
+
+
+/* Animation d'apparition */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classe pour les éléments cachés */
+.hidden {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Classe pour les éléments visibles avec l'animation */
+.visible {
+    animation: slideInLeft 0.5s ease-out forwards;
+}

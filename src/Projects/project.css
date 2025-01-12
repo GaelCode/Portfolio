@@ -85,3 +85,30 @@
 .project-status:hover {
     background-color: darkred;
 }
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+    .project {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+
+    .project {
+        height: 30vh;
+    }
+
+    .project-text {
+        padding: 5px;
+    }
+}
