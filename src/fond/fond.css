@@ -32,8 +32,8 @@
 }
 
 .pixel {
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     background-color: #000;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
     opacity: 0.1;
@@ -46,14 +46,17 @@
 @keyframes ripple {
     0% {
         transform: scale(1);
+        color: #000;
         opacity: 0.1;
     }
     50% {
         transform: scale(3);
+        color: beige;
         opacity: 0.6;
     }
     100% {
         transform: scale(1);
+        color: #000;
         opacity: 0.1;
     }
 }
