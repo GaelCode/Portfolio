@@ -31,6 +31,13 @@ const Fond: React.FC = () => {
 
             let radius = 96;
             const newPixelAnimationState = new Map(pixelAnimationState);
+            if (window.innerWidth < 1200 && window.innerWidth > 700) {
+                radius = 50;
+            } else if (window.innerWidth < 700 && window.innerWidth > 500) {
+                radius = 50;
+            } else if (window.innerWidth < 500) {
+                radius = 40;
+            }
 
             for (let row = 0; row < rows; row++) {
                 for (let col = 0; col < cols; col++) {

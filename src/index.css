@@ -26,7 +26,7 @@ main {
 /* Styles de base pour le container */
 .container {
     width: 100%;
-    max-width: 1700px; /* Limite la largeur maximale */
+    max-width: 1900px; /* Limite la largeur maximale */
     min-height: 100vh;
     margin: 0 auto; /* Centre le contenu */
     padding: 0 20px; /* Ajoute un padding latéral */
